@@ -1,0 +1,40 @@
+name: Automatic Build
+on:
+  push:
+    branches: [root]
+  pull_request:
+    branches: [root]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Detect and build
+        shell: bash
+        run: |
+          set -e
+          built=false
+          if [ -f package.json ]; then
+            built=true
+            if [ -f package-lock.json ]; then npm ci; else npm install; fi
+            npm test --if-present
+            npm run lint --if-present
+            npm run build --if-present
+          fi
+          if [ -f requirements.txt ] || [ -f pyproject.toml ] || [ -f setup.py ]; then
+            built=true
+            python -m pip install --upgrade pip build
+            [ ! -f requirements.txt ] || pip install -r requirements.txt
+            if [ -f pyproject.toml ] || [ -f setup.py ]; then python -m build; fi
+            if command -v pytest >/dev/null 2>&1; then pytest -q; fi
+          fi
+          if [ -f go.mod ]; then built=true; go test ./...; go build ./...; fi
+          if [ -f pom.xml ]; then built=true; mvn --batch-mode verify; fi
+          if [ -f gradlew ]; then built=true; chmod +x gradlew; ./gradlew build; fi
+          if compgen -G '*.sln' > /dev/null || compgen -G '*.csproj' > /dev/null; then built=true; dotnet restore; dotnet build --configuration Release; fi
+          if [ -f Dockerfile ]; then built=true; docker build -t repo-build:${GITHUB_SHA} .; fi
+          if [ "$built" = false ]; then echo 'No supported build manifest detected; checkout passed.'; fi
