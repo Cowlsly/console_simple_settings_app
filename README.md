@@ -1,9 +1,13 @@
 # Cowlsly Console Simple Settings
 
+[![Automatic Build](https://github.com/Cowlsly/console_simple_settings_app/actions/workflows/auto-build.yml/badge.svg?branch=root)](https://github.com/Cowlsly/console_simple_settings_app/actions/workflows/auto-build.yml)
+
 <div align="center"><img src="Cowlsly/.gitbook/assets/cowlsly_logo_small.png" alt="Cowlsly Production" width="220"></div>
 
 Repository: `Cowlsly/cowlsly-console-simple-settings-app`  
 Active and only branch: `root`
+
+> Every commit to `root` now triggers the Automatic Build workflow. Use the badge above or the Actions tab to see current build progress and failures.
 
 Cowlsly Simple Settings is the shared Android settings module and basic control shell for the Cowlsly Console suite.
 
