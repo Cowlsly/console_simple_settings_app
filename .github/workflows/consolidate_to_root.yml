@@ -18,6 +18,7 @@ jobs:
       - name: Check out root with complete history
         uses: actions/checkout@v4
         with:
+          persist-credentials: false
           ref: root
           fetch-depth: 0
 
