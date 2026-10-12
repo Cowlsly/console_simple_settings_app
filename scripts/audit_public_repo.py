@@ -71,7 +71,7 @@ def main() -> int:
         if len(paths) > 1
     ]
     payload = {
-        "repository": "Cowlsly/cowlsly-console-simple-settings-app",
+        "repository": "Cowlsly/console_simple_settings_app",
         "file_count": len(files),
         "total_bytes": sum(int(item["byte_size"]) for item in files),
         "exact_duplicate_groups": duplicates,

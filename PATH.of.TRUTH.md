@@ -23,7 +23,7 @@ It does not own API-key storage or reusable UI masters.
 1. Read this file and the authority documents before work.
 2. Do not store ALI-Key/API secrets, recovery data, or private vault material.
 3. Do not create shared branding, icons, panels, backgrounds, controls, or UI audio as local masters.
-4. Add reusable assets to `Cowlsly/cowlsly-ui-assets-and-data-files`, update its manifests/checksums, then sync generated Android copies from `ui_asset_dependencies.json`.
+4. Add reusable assets to `Cowlsly/ui_assets_and_data_files`, update its manifests/checksums, then sync generated Android copies from `ui_asset_dependencies.json`.
 5. Existing files under `assets/branding/`, `assets/images/`, and Android `res/` remain protected generated copies or migration candidates until canonical checksums and a Java 21 build pass.
 6. Android resources must be copied directly into valid resource-type directories; nested arbitrary folders under `res/drawable*` or `res/raw` are forbidden.
 7. Settings remain user-consent-led. No hidden admin or developer access.

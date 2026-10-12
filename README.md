@@ -4,7 +4,7 @@
 
 <div align="center"><img src="Cowlsly/.gitbook/assets/cowlsly_logo_small.png" alt="Cowlsly Production" width="220"></div>
 
-Repository: `Cowlsly/cowlsly-console-simple-settings-app`  
+Repository: `Cowlsly/console_simple_settings_app`  
 Active and only branch: `root`
 
 > Every commit to `root` now triggers the Automatic Build workflow. Use the badge above or the Actions tab to see current build progress and failures.
@@ -21,7 +21,7 @@ Cyberpunk UI follows the Cowlsly design language: neon glass panels over the **f
 JAVA_HOME=/path/to/java-21 ./gradlew assembleDebug
 ```
 
-The complete reusable asset set is canonical in `Cowlsly/cowlsly-ui-assets-and-data-files`: eight icons, five volume-step controls, compact PNG and SVG logos, and the animated cog-machine SVG background. Original SHA-256 values and byte identity are recorded there. Existing local paths are generated consumer copies and remain until deterministic sync and a final Java 21 build confirm safe cleanup.
+The complete reusable asset set is canonical in `Cowlsly/ui_assets_and_data_files`: eight icons, five volume-step controls, compact PNG and SVG logos, and the animated cog-machine SVG background. Original SHA-256 values and byte identity are recorded there. Existing local paths are generated consumer copies and remain until deterministic sync and a final Java 21 build confirm safe cleanup.
 
 ## What Simple Settings is
 
@@ -79,7 +79,7 @@ The first testable implementation may use an on-screen YES/NO gate. PIN, biometr
 
 ## Canonical UI asset source
 
-Reusable Cowlsly UI assets come from `Cowlsly/cowlsly-ui-assets-and-data-files` on active branch `root`. This repository declares pinned canonical paths in `ui_asset_dependencies.json`; generated assets and Android resources must not be edited manually. See `UI_ASSET_SOURCE.md`.
+Reusable Cowlsly UI assets come from `Cowlsly/ui_assets_and_data_files` on active branch `root`. This repository declares pinned canonical paths in `ui_asset_dependencies.json`; generated assets and Android resources must not be edited manually. See `UI_ASSET_SOURCE.md`.
 
 ## Documents
 

@@ -1,10 +1,10 @@
 # Cowlsly Simple Settings generated and migration assets
 
-This folder currently contains Phase 1 UI and icon files for `cowlsly_console_simple_settings_repo_03`. Reusable masters are being migrated to `Cowlsly/cowlsly-ui-assets-and-data-files`; files retained here are migration candidates or generated consumer copies.
+This folder currently contains Phase 1 UI and icon files for `console_simple_settings_app`. Reusable masters are being migrated to `Cowlsly/ui_assets_and_data_files`; files retained here are migration candidates or generated consumer copies.
 
 ## Canonical rule
 
-- Canonical repository: `Cowlsly/cowlsly-ui-assets-and-data-files`
+- Canonical repository: `Cowlsly/ui_assets_and_data_files`
 - Canonical branch: `root`
 - Consumer contract: `../ui_asset_dependencies.json`
 - Consumer policy: `../UI_ASSET_SOURCE.md`

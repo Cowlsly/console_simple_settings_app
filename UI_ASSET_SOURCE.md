@@ -1,6 +1,6 @@
 # Cowlsly canonical UI asset source
 
-Reusable Cowlsly UI assets are owned by `Cowlsly/cowlsly-ui-assets-and-data-files` on active branch `root`. Simple Settings is a consumer and must not carry an independently maintained shared-branding master pack.
+Reusable Cowlsly UI assets are owned by `Cowlsly/ui_assets_and_data_files` on active branch `root`. Simple Settings is a consumer and must not carry an independently maintained shared-branding master pack.
 
 ## Canonical paths consumed
 
@@ -20,8 +20,8 @@ Binary PNG/WebP exports and Android runtime resources remain protected migration
 The pinned dependency contract is `ui_asset_dependencies.json`. With sibling checkouts:
 
 ```bash
-python ../cowlsly-ui-assets-and-data-files/tools/sync_ui_assets.py \
-  --canonical-root ../cowlsly-ui-assets-and-data-files \
+python ../ui_assets_and_data_files/tools/sync_ui_assets.py \
+  --canonical-root ../ui_assets_and_data_files \
   --consumer-root .
 ```
 

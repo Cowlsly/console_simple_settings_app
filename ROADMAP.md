@@ -16,7 +16,7 @@ Every privileged proposal must show the Anchor the requested action, reason, per
 
 Phase 1 Android app exists in `app/` with Compose pages, search, usage-based ranking, system-setting intents, volume controls, CASMEA information entry, and a gated developer shortcut. The last recorded successful build used Java 21.
 
-The complete reusable Simple Settings asset set is canonical and byte-verified in `Cowlsly/cowlsly-ui-assets-and-data-files`. `UI_ASSET_SOURCE.md` and `ui_asset_dependencies.json` define canonical paths and generated Android destinations. Existing local copies remain protected until deterministic sync and a fresh build pass.
+The complete reusable Simple Settings asset set is canonical and byte-verified in `Cowlsly/ui_assets_and_data_files`. `UI_ASSET_SOURCE.md` and `ui_asset_dependencies.json` define canonical paths and generated Android destinations. Existing local copies remain protected until deterministic sync and a fresh build pass.
 
 ## Phase 1 — Existing foundation
 

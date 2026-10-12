@@ -1,6 +1,6 @@
 # Simple Settings — Phase 1 Complete
 
-**Repo:** `cowlsly_console_simple_settings_repo_03`  
+**Repo:** `console_simple_settings_app`  
 **Date:** 2026-07-08  
 **Status:** Phase 1 shipped — Android app in `app/`, docs and assets in place
 
@@ -104,8 +104,8 @@ Output: `app/build/outputs/apk/debug/app-debug.apk` (gitignored).
 
 | Consumer repo | Contract |
 |---------------|----------|
-| `cowlsly_console_medical_emergency_assistant_casmea_repo_02` | Read `content://com.cowlsly.simplesettings.casmea/` |
-| `cowlsly_console_authenticator_repo_04` | Developer grant (interim: local flag until repo 04 ships) |
+| Medical emergency assistant (CASMEA, no repository yet) | Read `content://com.cowlsly.simplesettings.casmea/` |
+| `Cowlsly/Cowlsly-Athenticator` | Developer grant (interim: local flag until the Authenticator handset checks pass) |
 | Suite apps | Read `content://com.cowlsly.simplesettings.sync/` |
 
 ---

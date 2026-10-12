@@ -1,6 +1,6 @@
 # Simple Settings — master settings app vision
 
-**Repo:** `cowlsly_console_simple_settings_repo_03`  
+**Repo:** `console_simple_settings_app`  
 **Last updated:** 2026-07-08  
 **Status:** North-star design — Phase 1 shipped in `app/`; this doc holds the full picture.
 
