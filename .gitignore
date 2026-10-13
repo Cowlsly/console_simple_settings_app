@@ -12,3 +12,10 @@
 *.apk
 *.ap_
 *.aab
+
+# Added by repo hygiene sweep
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
