@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# From vayun-mathur/Modern-Apps (GPL-3.0, see scripts/LICENSE-Modern-Apps).
+# Modified 2026-10-15 by Cowlsly: the \uXXXX escapes in skip_exact are stored as
+# the equivalent UTF-8 characters, and this notice was added. Behaviour is unchanged.
 import sys, re
 pat = re.compile(r'Text\s*\(\s*(?:text\s*=\s*)?"([^"]+)"')
 # Skip legitimate decorative/single-char/icon previews
