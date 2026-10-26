@@ -20,7 +20,7 @@ jobs:
     timeout-minutes: 45
 
     steps:
-      - name: Checkout root
+      - name: Check out proposed repository state
         uses: actions/checkout@v4
         with:
           persist-credentials: false
