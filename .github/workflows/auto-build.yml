@@ -1,9 +1,5 @@
 name: Automatic Build
 on:
-  push:
-    branches: [root]
-  pull_request:
-    branches: [root]
   workflow_dispatch:
 permissions:
   contents: read
