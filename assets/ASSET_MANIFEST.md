@@ -1,6 +1,6 @@
 # Historical asset manifest — Cowlsly Simple Settings
 
-This catalog records the Phase 1 local paths that existed before canonical UI migration. Reusable masters belong in `Cowlsly/ui_assets_and_data_files`; these entries are migration mappings or generated consumer copies, not an independent source of truth.
+This catalog records the Phase 1 local paths that existed before canonical UI migration. Reusable masters belong in `Cowlsly/.-.07_Cowlsly-s_Asset_Studio`; these entries are migration mappings or generated consumer copies, not an independent source of truth.
 
 ## Labels
 
