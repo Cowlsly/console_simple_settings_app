@@ -17,11 +17,16 @@ Binary PNG/WebP exports and Android runtime resources remain protected migration
 
 ## Synchronisation
 
-The pinned dependency contract is `ui_asset_dependencies.json`. With sibling checkouts:
+The pinned dependency contract is `ui_asset_dependencies.json`. Use the current Asset Studio tooling with a separate worktree at the pinned commit:
+
+Clone once, then create the pinned worktree before running the sync.
 
 ```bash
-python "../.··(•)··.07_Cowlsly's_Asset_Studio/tools/sync_ui_assets.py" \
-  --canonical-root "../.··(•)··.07_Cowlsly's_Asset_Studio" \
+git clone https://github.com/Cowlsly/.-.07_Cowlsly-s_Asset_Studio.git ../asset-studio
+asset_commit=$(python -c 'import json; print(json.load(open("ui_asset_dependencies.json"))["canonical_commit"])')
+git -C ../asset-studio worktree add --detach "$PWD/../asset-studio-pinned" "$asset_commit"
+python ../asset-studio/tools/sync_ui_assets.py \
+  --canonical-root ../asset-studio-pinned \
   --consumer-root .
 ```
 
